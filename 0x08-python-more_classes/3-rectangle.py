@@ -112,13 +112,12 @@ class Rectangle:
         """print the rectangle with the character #
 
         Returns:
-            0 if width or height is 0
             {string}: rectangle containing `#`
         """
         rect = ""
 
         if self.__width == 0 or self.__height == 0:
-            return 0
+            return ""
 
         for i in range(self.__height):
             rect = rect + ("#"*self.__width)
