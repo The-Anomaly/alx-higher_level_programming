@@ -126,5 +126,5 @@ class Rectangle:
         return rect
 
     def __repr__(self):
-        """string representation for new instance"""
+        """string representation for new instance of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
