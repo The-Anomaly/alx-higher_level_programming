@@ -115,14 +115,13 @@ class Rectangle:
             0 if width or height is 0
             {string}: rectangle containing `#`
         """
-        rect = []
+        rect = ""
 
         if self.__width == 0 or self.__height == 0:
             return 0
 
         for i in range(self.__height):
-            rect.append("#"*self.__width)
+            rect = rect + ("#"*self.__width)
             if i < (self.__height - 1):
-                rect.append("\n")
-
-        return "".join(rect)
+                rect = rect + "\n"
+        return rect
