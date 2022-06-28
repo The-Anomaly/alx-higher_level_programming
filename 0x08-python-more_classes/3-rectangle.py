@@ -117,13 +117,12 @@ class Rectangle:
         """
         rect = []
 
-        if self.__width == 0  or self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
 
         for i in range(self.__height):
             rect.append("#"*self.__width)
             if i < (self.__height - 1):
                 rect.append("\n")
-            print ("#"*self.__width)
 
         return "".join(rect)
