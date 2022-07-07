@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""Module to create JSO string from object"""
+
+
 import json
-"""Module to return python object as a JSON string"""
 
 
 def from_json_string(my_str):
