@@ -48,6 +48,7 @@ Now use it:
     TypeError: a must be an integer
 
     # Infinity argument -> Overflow Error
+    >>> add_integer(5, 5e500)
     Traceback (most recent call last):
         ...
     OverflowError: cannot convert float infinity to integer
@@ -57,3 +58,9 @@ Now use it:
     Traceback (most recent call last):
         ...
     TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+    # Nan argument
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+        ...
+    ValueError: cannot convert float NaN to integer
