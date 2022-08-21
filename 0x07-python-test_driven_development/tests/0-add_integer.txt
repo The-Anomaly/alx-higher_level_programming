@@ -46,3 +46,14 @@ Now use it:
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
+
+    # Infinity argument -> Overflow Error
+    Traceback (most recent call last):
+        ...
+    OverflowError: cannot convert float infinity to integer
+
+    # More than two arguments -> TypeError
+    >>> add_integer(5, 3, 12)
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
