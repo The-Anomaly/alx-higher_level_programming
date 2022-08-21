@@ -21,8 +21,18 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    for i, ch in enumerate(text):
-        if not (i > 0 and ch == " " and text[i-1] in ['.', '?', ':']):
-            print(ch, end="")
-        if ch in ['.', '?', ':']:
-            print("\n")
+    flag = 0
+
+    for ch in text:
+        if flag == 0:
+            if ch == " ":
+                continue
+            else:
+                flag = 1
+        if flag == 1:
+            if ch in ['.', '?', ':']:
+                print(ch)
+                print()
+                flag = 0
+            else:
+                print(ch, end="")
