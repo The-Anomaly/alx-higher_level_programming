@@ -6,6 +6,7 @@
         print_square(int)
 """
 
+
 def print_square(size):
     """ Definition for a function that prints a square with the character #.
 

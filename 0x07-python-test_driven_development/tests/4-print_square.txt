@@ -16,6 +16,12 @@ Now use:
     ####
     ####
 
+    # No argument
+    >>> print_square()
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
     # Argument is not an integer
     >>> print_square("4")
     Traceback (most recent call last):
