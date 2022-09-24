@@ -10,8 +10,12 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    data = {'q': ""}
-    data['q'] = argv[1]
+    val = ""
+
+    if argv[1]:
+        val = argv[1]
+
+    data = {'q': val}
     url = 'http://0.0.0.0:5000/search_user'
 
     r = requests.post(url, data=data)
