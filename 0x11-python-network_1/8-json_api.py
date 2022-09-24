@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     r = requests.post(url, data=data)
     try:
-        res =  r.json()
+        res = r.json()
         if res == {}:
             print("No result")
         else:
