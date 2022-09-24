@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """A script that
-- takes in a URL, and an email
-- sends a POST request to the URL with the email as a parameter
-- displays the body of the response in utf-8
+- takes in a URL
+- sends a request to the URL
+- displays the value of the X-Request-Id variable
+- found in the header of the response.
 """
 
 
