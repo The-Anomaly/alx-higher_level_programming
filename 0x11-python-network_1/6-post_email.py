@@ -11,7 +11,7 @@ import requests
 from sys from argv
 
 if __name__ == "__main__":
-    data = {'email': argv[2]}
+    email = {'email': argv[2]}
 
-    r = requests.post(argv[1], data=data)
+    r = requests.post(argv[1], data=email)
     print(r.text)
