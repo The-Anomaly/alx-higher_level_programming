@@ -12,7 +12,7 @@ from sys import argv
 if __name__ == "__main__":
     val = ""
 
-    if argv[1]:
+    if len(argv) > 1:
         val = argv[1]
 
     data = {'q': val}
