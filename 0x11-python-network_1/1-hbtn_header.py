@@ -14,4 +14,4 @@ if __name__ == '__main__':
     req = Request(argv[1])
     with urlopen(req) as response:
         header = dict(response.headers)
-        print(f"{header['X-Request-Id']}")
+        print(header['X-Request-Id'])
