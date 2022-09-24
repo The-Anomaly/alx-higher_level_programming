@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """A script that
-- takes in a URL
-- sends a request to the URL
-- displays the value of the X-Request-Id variable
-- found in the header of the response.
+- takes in a URL, and an email
+- sends a POST request to the URL with the email as a parameter
+- displays the body of the response in utf-8
 """
 
 
@@ -14,4 +13,4 @@ if __name__ == '__main__':
     req = Request(argv[1])
     with urlopen(req) as response:
         header = dict(response.headers)
-        print(header['X-Request-Id'])
+        print(header.get('X-Request-Id'))
